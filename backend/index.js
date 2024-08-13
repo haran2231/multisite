@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   
   // Pass the language to the frontend or store it in session/local storage
   req.userLanguage = geo ? geo.country.toLowerCase() : 'en';
-  console.log(ip);
+  console.log(geo);
   next();
 });
 
