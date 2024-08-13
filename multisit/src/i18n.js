@@ -13,7 +13,7 @@ const resources = {
       welcome: "Bem-vindo ao site brasileiro!",
     }
   },
-  uk: {
+  us: {
     translation: {
       welcome: "欢迎来到中国网站！",
     }
