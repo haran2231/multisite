@@ -17,7 +17,7 @@ function App() {
         const response = await fetch('https://multisite-vebc.onrender.com/api/get-language');
         
         const data = await response.json();
-        console.log(data);
+        console.log(data.language);
         const language = data.language || 'en'; // Default to 'en'
         i18n.changeLanguage(language);
       } catch (error) {
