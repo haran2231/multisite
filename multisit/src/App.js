@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const fetchLanguage = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/get-language');
+        const response = await fetch('https://multisite-vebc.onrender.com/api/get-language');
         
         const data = await response.json();
         console.log(data);
