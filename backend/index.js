@@ -23,6 +23,7 @@ app.use((req, res, next) => {
       if (geo) {
         console.log('Geo Information:', geo);
         req.userLanguage = geo.country.toLowerCase();
+        
       } else {
         console.log('No geolocation data found for IP:', ip);
         req.userLanguage = 'en'; // Default language if no geolocation data is found
