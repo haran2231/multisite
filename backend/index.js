@@ -26,6 +26,8 @@ app.use((req, res, next) => {
       } else {
         console.log('No geolocation data found for IP:', ip);
       }
+
+      req.userLanguage = geo ? geo.country.toLowerCase() : 'en';
     }
   } catch (error) {
     console.error('Error during geolocation lookup:', error);
